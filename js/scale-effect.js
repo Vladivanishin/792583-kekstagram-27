@@ -148,35 +148,4 @@ updateSlider();
 form.addEventListener('change', onFormChange);
 sliderElement.noUiSlider.on('update', onSliderUpdate);
 
-///
-// inputChrome.addEventListener('click', () => {
-//   resetEffect();
-//   image.classList.add('effects__preview--chrome');
-// });
-
-// inputNone.addEventListener('click', () => {
-//   resetEffect();
-//   image.classList.add('effects__preview--none');
-// });
-
-// inputSepia.addEventListener('click', () => {
-//   resetEffect();
-//   image.classList.add('effects__preview--sepia');
-// });
-
-// inputMarvin.addEventListener('click', () => {
-//   resetEffect();
-//   image.classList.add('effects__preview--marvin');
-// });
-
-// inputPhobos.addEventListener('click', () => {
-//   resetEffect();
-//   image.classList.add('effects__preview--phobos');
-// });
-
-// inputHeat.addEventListener('click', () => {
-//   resetEffect();
-//   image.classList.add('effects__preview--heat');
-// });
-
-export { resetScale, /* resetEffect, */ resetEffects };
+export { resetScale, resetEffects };

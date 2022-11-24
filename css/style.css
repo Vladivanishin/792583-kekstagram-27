@@ -709,7 +709,9 @@ main {
 
   border-radius: 5px;
 }
-
+.text-max {
+  color: #f51e06;
+}
 
 /**
  * Кнопка для отправки изображения

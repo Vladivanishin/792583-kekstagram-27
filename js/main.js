@@ -1,6 +1,10 @@
-import { getArrayPictures } from '/js/data.js';
-import './user-modal.js';
-import './form-valid.js';
 import { renderPictures } from './picture.js';
+import { setUserFormSubmit, closeUserModal } from './form.js';
+import { getData } from './api.js';
 
-renderPictures(getArrayPictures);
+const SIMILAR_PICTURE_COUNT = 25;
+
+getData((picture) => {
+  renderPictures(picture.slice(0, SIMILAR_PICTURE_COUNT));
+});
+setUserFormSubmit(closeUserModal);
